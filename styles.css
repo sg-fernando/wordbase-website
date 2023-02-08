@@ -1,0 +1,221 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    scroll-behavior: smooth;
+}
+html
+{
+    background-color: black;
+}
+#container
+{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+@keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+@keyframes showDetails
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-0.5em);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+details
+{
+    cursor: pointer;
+    transition: height 1s;
+    overflow: hidden;
+}
+
+details:not([open])
+{
+    height: 1.5em;
+}
+
+details[open]
+{
+    height: 4em;
+}
+
+header
+{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),url("img/stadium.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: header;
+    animation: fadeIn 1.5s;
+}
+
+#lower-header
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    font-size: 1em;
+    animation: fadeIn 1.5s;
+}
+
+#title
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+}
+img#preview
+{
+    width: 20em;
+}
+
+footer
+{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em;
+    grid-area: footer;
+    color: rgb(255, 255, 255);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ),url("img/stadium.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: .5em;
+}
+nav a:hover
+{
+    background-color: rgb(81, 107, 41);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+#content
+{
+    font-size: 1.7em;
+    color: rgb(255, 255, 255);
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#about
+{
+    background-color: rgb(67, 107, 41);
+    text-align: center;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    animation: fadeIn 1.5s;
+}
+#download
+{
+    background-color: rgb(67, 107, 41);
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+#contact
+{
+    background-color: rgb(67, 107, 41);
+    padding: 4em;
+}
+#contact form
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: .5em;
+}
+#personal-information
+{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+input, textarea
+{
+    padding: 5px;
+    border-radius: 5px;
+}
+legend
+{
+    font-size: 1.5em;
+}
+input#submit
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.7em;  
+    cursor: pointer;
+}
+
+span.required
+{
+    color: rgb(158, 0, 0);
+}
