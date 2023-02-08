@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Word Base</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+
+            <header>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#download">Download</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div id="lower-header">
+                    <div id="title">
+                        <h1>Word Base</h1>
+                        <h3>Play smart.</h3>
+                    </div>
+                    <img id="preview" src="img/preview-android.png" alt="screenshot of app">
+                </div>
+            </header>
+
+            <div id="content">
+                <div id="about">
+                    <p>
+                        Step up to the plate and swing for the fences! <br> 
+                        Designed for young spellers of all ages, this educational app combines the thrill of America's favorite pastime 
+                        with interactive lessons to help kids improve their spelling skills. So whether they're an all-star or just starting out, get ready to hit a home run with Word Base!
+                    </p>
+                    
+                    <details>
+                        <summary>Have fun!</summary>
+                        <p>With engaging animations, fun challenges, 
+                            and plenty of opportunities to practice, kids will feel like they're playing a game while learning essential 
+                            spelling skills.</p>
+                    </details>
+                    <details>
+                        <summary>Learn at your own pace.</summary>
+                        <p>
+                            With a variety of difficulty levels, kids can choose the right challenge for them. 
+                            Whether they're just starting out or are ready to take on more advanced words, Word Base has something for everyone.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Track your progress.</summary>
+                        <p>
+                            With a built-in progress tracker, kids can see how they're doing and keep track of their accomplishments. 
+                            They can even earn badges for completing challenges and reaching new milestones.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Customize your experience.</summary>
+                        <p>
+                            With the ability to create and add your own custom word lists, kids can practice specific words that are relevant to their interests or curriculum. 
+                            Whether it's for school, a special project, or just for fun, the app's customization options allow kids to personalize their spelling experience.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Play with friends.</summary>
+                        <p>
+                            With the ability to create and add your own custom word lists, kids can practice specific words that are relevant to their interests or curriculum. 
+                            Whether it's for school, a special project, or just for fun, the app's customization options allow kids to personalize their spelling experience.
+                        </p>
+                    </details>
+                </div>
+                <div id="download">
+                    <h1>Download now!</h1>
+                    <div id="download-buttons">
+                        <object data="img/googleplay.svg" width="300" height="300"> </object>
+                        <object data="img/appstore.svg" width="300" height="300"> </object>
+                    </div>
+                </div>
+                <div id="contact">
+                    <form action="">
+                        <fieldset id="contact-information">
+                            <legend>Contact Us</legend>
+                            <div id="personal-information">
+                                <div id="labels">
+                                    <label for="first_name">First Name: <span class="required">*</span></label><br>
+                                    <label for="last_name">Last Name: <span class="required">*</span></label><br>
+                                    <label for="email">Email: <span class="required">*</span></label>
+                                </div>
+                                <div id="inputs">
+                                    <input type="text" id="first_name" name="first_name" pattern="[A-Za-z\s\x27]{1,}" required><br>
+                                    <input type="text" id="last_name" name="last_name" pattern="[A-Za-z\s\x27]{1,}" required><br>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <textarea id="comment" name="comment" rows="10" cols="70"></textarea>
+                        </fieldset>
+                        <input id="submit" type="submit" value="Submit">
+                        <input id="dont-submit" type="submit" value="Don't Submit">
+                    </form>
+                </div>
+            </div>
+            <footer>Created by so and so.</footer>
+        </div>
+    </body>
+</html>
