@@ -37,7 +37,7 @@ html
     from
     {
         opacity: 0;
-        transform: translateY(-0.5em);
+        transform: translateY(-.5em);
     }
     to
     {
@@ -60,7 +60,7 @@ details:not([open])
 
 details[open]
 {
-    height: 4em;
+    height: 8em;
 }
 
 header
@@ -151,7 +151,7 @@ nav a:hover
     gap: 0.5em;
 }
 
-#about
+#about-video
 {
     background-color: rgb(67, 107, 41);
     text-align: center;
@@ -163,6 +163,18 @@ nav a:hover
     gap: 2em;
     animation: fadeIn 1.5s;
 }
+
+#about
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    animation: fadeIn 1.5s;
+}
+
 #download
 {
     background-color: rgb(67, 107, 41);
